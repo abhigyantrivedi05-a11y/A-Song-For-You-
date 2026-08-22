@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>A Song For You 💌</title>
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ffd6e7, #fff5f8);
+        }
+
+        .card {
+            background: white;
+            padding: 40px 25px;
+            border-radius: 25px;
+            width: 80%;
+            max-width: 400px;
+        }
+
+        h1 {
+            font-size: 30px;
+        }
+
+        p {
+            color: #666;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 15px 28px;
+            border: none;
+            border-radius: 30px;
+            font-size: 17px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+
+        <h1>💌 A SONG FOR YOU</h1>
+
+        <p>A little something I wanted you to hear... 🎵</p>
+
+        <button onclick="playSong()">
+            ▶ TAP TO PLAY
+        </button>
+
+        <audio id="song">
+            <source src="song.mp3" type="audio/mpeg">
+        </audio>
+
+    </div>
+
+    <script>
+        function playSong() {
+            document.getElementById("song").play();
+        }
+    </script>
+
+</body>
+</html>
